@@ -1,62 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import Search from './components/adresse.js'
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <Search/>
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#E69B5D',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  logo:{
-
-  },
-  code_p: {
-
-  },
-  ville: {
-
-  },
-  rue: {
-
-  },
-  num: {
-
-  },
-  complement: {
-
-  },
-  rechercher: {
-
-  },
-  add: {
-
-  },
-});
