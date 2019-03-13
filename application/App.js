@@ -11,11 +11,52 @@ export default class App extends React.Component {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#E69B5D',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  logo:{
+
+  },
+  code_p: {
+
+  },
+  ville: {
+
+  },
+  rue: {
+
+  },
+  num: {
+
+  },
+  complement: {
+
+  },
+  rechercher: {
+
+  },
+  add: {
+
   },
 });
