@@ -8,12 +8,12 @@ class Adresse extends React.Component {
             <ImageBackground source={require("./img/background_arch.jpg")} style={{flex: 1, resizeMode: 'cover'}}>
                 <View style={styles.adresse_container}>
                     <Text style={styles.txt_adresse}>Entrez l'adresse</Text>
-                    <TextInput style={styles.code_ville_rue} placeholder="Code Postale"></TextInput>
-                    <TextInput style={styles.code_ville_rue} placeholder="Ville"></TextInput>
-                    <TextInput style={styles.code_ville_rue} placeholder="Rue"></TextInput>
+                    <TextInput style={styles.code_ville_rue} placeholder="Code Postale" placeholderTextColor="black"></TextInput>
+                    <TextInput style={styles.code_ville_rue} placeholder="Ville" placeholderTextColor="black"></TextInput>
+                    <TextInput style={styles.code_ville_rue} placeholder="Rue" placeholderTextColor="black"></TextInput>
                     <View style={styles.container_num_compl}>
-                        <TextInput style={styles.num_compl} placeholder="N°"></TextInput>
-                        <TextInput style={styles.num_compl} placeholder="Complément"></TextInput>
+                        <TextInput style={styles.num_compl} placeholder="N°" placeholderTextColor="black"></TextInput>
+                        <TextInput style={styles.num_compl} placeholder="Complément" placeholderTextColor="black"></TextInput>
                     </View>
                 </View>
                 <View style={styles.container_rechercher}>
@@ -31,17 +31,18 @@ class Adresse extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
+      flex: 1
     },
 
     adresse_container: {
         width: '100%',
         height: '55%',
         alignItems: 'center',
-        marginTop: '15%',
+        marginTop: '15%'
     },
 
     txt_adresse: {
+        color: "white",
         marginTop: '5%',
         marginBottom: 25,
         fontSize: 25
@@ -49,31 +50,35 @@ const styles = StyleSheet.create({
   
     code_ville_rue: {
         textAlign: 'center',
-        borderColor: 'black',
+        borderColor: 'white',
         borderWidth: 1,
         width: '70%',
         height: '14%',
         marginBottom: 22,
         fontSize: 15,
+        backgroundColor: "white",
+        opacity: 0.6
     },
 
     container_num_compl: {
         width: '70%',
         flex: 1,
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'space-between'
     },
   
     num_compl: {
-        borderColor: 'black',
+        borderColor: 'white',
         borderWidth: 1,
         width: '47%',
-        textAlign: 'center'
+        textAlign: 'center',
+        backgroundColor: "white",
+        opacity: 0.6
     },
   
     container_rechercher: {
         width: '100%',
-        alignItems: 'center',
+        alignItems: 'center'
     },
   
     container_add: {
