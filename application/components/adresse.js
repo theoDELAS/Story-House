@@ -10,10 +10,10 @@ class Adresse extends React.Component {
             pickerSelection : null
         }
         this.location = [
-            {label : "Choisissez votre lieu", value:"1"},
-            {label : "Grand théatre", value:"2"},
-            {label : "Place des Quinconces", value:"3"},
-            {label : "Place de la Victoire", value:"4"}
+            {label : "Choisissez votre lieu", value:1},
+            {label : "Grand théatre", value:2},
+            {label : "Place des Quinconces", value:3},
+            {label : "Place de la Victoire", value:4}
 
         ]
     }
@@ -32,7 +32,7 @@ class Adresse extends React.Component {
                         { this.location.map (({label, value}) => <Picker.Item label={label} value={value} />) }
                     </Picker> 
 
-                    
+
                     {/**************** La ligne suivante est retiré pour faire une liste déroulante qui renvoi vers nos sélection *********************/}
                      {/* <TextInput style={styles.code_ville_rue} placeholder="Code Postale" placeholderTextColor="black"></TextInput> */}
                      <TextInput style={styles.code_ville_rue} placeholder="Ville" placeholderTextColor="black"></TextInput>
