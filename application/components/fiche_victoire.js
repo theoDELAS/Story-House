@@ -1,30 +1,21 @@
 import React from 'react';
 import { StyleSheet, View, Text, Button, TextInput, ImageBackground, Picker } from 'react-native'
-import { Actions } from 'react-native-router-flux'
 
 
-class Adresse extends React.Component {
+
+class fiche_victoire extends React.Component {
     constructor(props) {
         super (props);
         this.state= {
             pickerSelection : null
         }
         this.location = [
-            {label : "Choisissez votre lieu", key:1},
-            {label : "Grand théatre", key:2},
-            {label : "Place des Quinconces", key:3},
-            {label : "Place de la Victoire", key:4}
+            {label : "Choisisseqz'rey(strudytykre lieu", key:1},
+            {label : "Gra'rqye(tsurje(tkr'héatre", key:2},
+            {label : "Plazqtsey(ruj", key:3},
+            {label : "Placezr'qyetsuryjdute", key:4}
 
         ]
-    }
-    select_mes_couilles = () => { 
-        const {pickerSelection} = this.state
-        const location = {
-            city: "bordeaux",
-            zipcode: 33000
-        }
-            Actions.detail({location});
-   
     }
   render() {
     return (
@@ -36,11 +27,9 @@ class Adresse extends React.Component {
                         selectedValue={this.state.pickerSelection}
                         style={{height: 50, width: '70%', backgroundColor: 'white', marginBottom: 10}}
                         onValueChange={(itemValue) =>
-                            this.setState({pickerSelection:itemValue})
-                            
+                            this.setState({pickerSelection: itemValue})
                         }>
-                        { this.location.map (({label, key}) => <Picker.Item key={key} label={label} value={key}/>) }
-                        
+                        { this.location.map (({label, value, key}) => <Picker.Item key={key} label={label} value={value} />) }
                     </Picker> 
 
 
@@ -54,7 +43,7 @@ class Adresse extends React.Component {
                     </View> 
                  </View> 
                  <View style={styles.container_rechercher}>
-                    <Button title="Rechercher" onPress={() => this.select_mes_couilles()}/>
+                    <Button title="Rechercher" onPress={function() {}}></Button>
                 </View>
                 <View style={styles.container_add}>
                     <Button style={styles.add} title="Votre adresse n'existe pas ? Entrez la vous même" onPress={function() {}}></Button>
@@ -63,11 +52,8 @@ class Adresse extends React.Component {
 
          </View>
     );
-
   }
 }
-
-
 
 const styles = StyleSheet.create({
     container: {
@@ -129,4 +115,4 @@ const styles = StyleSheet.create({
   });
   
 
-export default Adresse
+export default fiche_victoire
